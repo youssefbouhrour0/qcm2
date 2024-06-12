@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question-container">
+            <div id="question">Question will go here</div>
+            <div id="answers">
+                <!-- Answer choices will be dynamically inserted here -->
+            </div>
+        </div>
+        <div id="controls">
+            <button id="submit-btn">Submit</button>
+            <button id="next-btn" style="display:none;">Next</button>
+        </div>
+        <div id="progress">
+            <span id="progress-percent">0%</span>
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+        <div id="timer">
+            Time left: <span id="time-left">10</span> seconds
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
