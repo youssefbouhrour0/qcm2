@@ -1,33 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz Réseau Informatique</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <img src="img/banner.jpeg" alt="Bannière" class="banner"> <!-- Chemin relatif vers votre image -->
+        <h1>Quiz Réseau Informatique</h1>
+    </header>
     <div id="quiz-container">
-        <div id="question-container">
-            <div id="question">Question will go here</div>
-            <div id="answers">
-                <!-- Answer choices will be dynamically inserted here -->
-            </div>
+        <div id="questions-container">
+            <!-- Les questions seront insérées dynamiquement ici -->
         </div>
-        <div id="controls">
-            <button id="submit-btn">Submit</button>
-            <button id="next-btn" style="display:none;">Next</button>
-        </div>
-        <div id="progress">
-            <span id="progress-percent">0%</span>
-            <div id="progress-bar">
-                <div id="progress-fill"></div>
-            </div>
-        </div>
-        <div id="timer">
-            Time left: <span id="time-left">10</span> seconds
-        </div>
+        <button id="submit-all-btn">Soumettre toutes les réponses</button>
     </div>
+    <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
